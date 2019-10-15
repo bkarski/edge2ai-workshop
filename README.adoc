@@ -75,7 +75,7 @@ exit # takes you back to the centos user's shell
 [source,shell]
 ----
 cd ~
-git clone https://github.com/asdaraujo/edge2ai-workshop.git
+git clone https://github.com/ahadjidj/edge2ai-workshop.git
 mv edge2ai-workshop/mqtt.* ~
 python mqtt.iot_simulator.py mqtt.iot.config
 ----
