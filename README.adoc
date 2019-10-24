@@ -1,4 +1,4 @@
-= EDGE2AI Workshop
+= CDF Tech Bootcamp
 
 == Introduction
 
