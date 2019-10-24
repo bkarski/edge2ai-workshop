@@ -29,9 +29,8 @@ image::images/iot-architecture.png[width=800]
 
 == Connecting to your cluster
 
-You should have 2 addresses for you one-node cluster: the public DNS name and the public IP address. With those addresses you can test the following connectivity to your cluster:
+You instructor will give access to a registration link where you can request a cluster. You should have 2 addresses for you one-node cluster: the public DNS name and the public IP address. With those addresses you can test the following connectivity to your cluster:
 
-. Ensure you can SSH into the cluster (using either the DNS name or IP address)
 . Ensure you can connect to the following service using your browser:
 +
 [%autowidth,options="header"]
@@ -52,6 +51,33 @@ You should have 2 addresses for you one-node cluster: the public DNS name and th
 Below a screenshot of Chrome open with 8 tabs, one for each service.
 
 image::images/browser.png[width=800]
+
+=== Ensure you can SSH into the cluster from Linux/Macos
+
+From the registration link, download the PEM key required to access to you cluster with SSH. Run the following command:
+
+----
+chmod 400 workshop.pem
+ssh -i workshop.pem centos@you-ip-address
+----
+
+=== Ensure you can SSH into the cluster from Windows
+From the registration link, download the PEM key required to access to you cluster with SSH. We will use Putty to connect to the cluster. However, Putty doesn't accept PEM key. Follow these instructions to convert your PEM key into a PPK key and connect to the cluster
+
+Convert your key with Puttygen:
+
+. Use puttygen to convert .PEM file to .PPK file.
+. Start puttygen and select “Load”
+. Select your .PEM file.
+. Putty will convert the .PEM format to .PPK format.
+. Select “Save Private Key” A passphrase is not required but can be used if additional security is required.
+
+Connect with Putty:
+
+. Launch Putty and enter the host IP address.
+. Navigate to Connection/SSH/Auth
+. Click “Browse” and select the .PPK file you exported from puttygen.
+. Click “Open.”
 
 == Labs
 * From Edge to Streams Processing (Lab 1 to Lab 8) : https://github.com/ahadjidj/edge2ai-workshop/blob/master/streaming.adoc
