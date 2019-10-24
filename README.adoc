@@ -53,6 +53,6 @@ Below a screenshot of Chrome open with 8 tabs, one for each service.
 
 image::images/browser.png[width=800]
 
-===== Labs
+== Labs
 * From Edge to Streams Processing (Lab 1 to Lab 8) : https://github.com/ahadjidj/edge2ai-workshop/blob/master/streaming.adoc
 * Analytics and Data Science (Lab 9 to Lab 12) : https://github.com/ahadjidj/edge2ai-workshop/blob/master/datascience.adoc
