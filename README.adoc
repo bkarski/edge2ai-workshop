@@ -27,7 +27,7 @@ image::images/iot-architecture.png[width=800]
 * Ability to SSH into remote hosts from Windows or Mac. For Windows machines, install Putty or even better link:https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse[install OpenSSH for PowerShell].
 * A modern browser like Google Chrome (IE not supported).
 
-===== Connecting to your cluster
+== Connecting to your cluster
 
 You should have 2 addresses for you one-node cluster: the public DNS name and the public IP address. With those addresses you can test the following connectivity to your cluster:
 
